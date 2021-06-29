@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		633486EF268B4A2900C5584E /* Numbers Going Up WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 633486EE268B4A2900C5584E /* Numbers Going Up WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		633486F4268B4A2A00C5584E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633486F3268B4A2A00C5584E /* Assets.xcassets */; };
+		633486FB268B4A2A00C5584E /* Numbers Going Up WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 633486FA268B4A2A00C5584E /* Numbers Going Up WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63348700268B4A2A00C5584E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633486FF268B4A2A00C5584E /* ContentView.swift */; };
+		63348702268B4A2A00C5584E /* Numbers_Going_UpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348701268B4A2A00C5584E /* Numbers_Going_UpApp.swift */; };
+		63348704268B4A2A00C5584E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348703268B4A2A00C5584E /* ComplicationController.swift */; };
+		63348706268B4A2B00C5584E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63348705268B4A2B00C5584E /* Assets.xcassets */; };
+		63348709268B4A2B00C5584E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63348708268B4A2B00C5584E /* Preview Assets.xcassets */; };
+		63348714268B4A2B00C5584E /* Numbers_Going_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348713268B4A2B00C5584E /* Numbers_Going_UpTests.swift */; };
+		6334871F268B4A2B00C5584E /* Numbers_Going_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334871E268B4A2B00C5584E /* Numbers_Going_UpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		633486F0268B4A2900C5584E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633486E4268B4A2900C5584E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633486ED268B4A2900C5584E;
+			remoteInfo = "Numbers Going Up WatchKit App";
+		};
+		633486FC268B4A2A00C5584E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633486E4268B4A2900C5584E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633486F9268B4A2A00C5584E;
+			remoteInfo = "Numbers Going Up WatchKit Extension";
+		};
+		63348710268B4A2B00C5584E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633486E4268B4A2900C5584E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633486F9268B4A2A00C5584E;
+			remoteInfo = "Numbers Going Up WatchKit Extension";
+		};
+		6334871B268B4A2B00C5584E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633486E4268B4A2900C5584E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633486ED268B4A2900C5584E;
+			remoteInfo = "Numbers Going Up WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63348726268B4A2B00C5584E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				633486FB268B4A2A00C5584E /* Numbers Going Up WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6334872A268B4A2B00C5584E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				633486EF268B4A2900C5584E /* Numbers Going Up WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		633486EA268B4A2900C5584E /* Numbers Going Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Numbers Going Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633486EE268B4A2900C5584E /* Numbers Going Up WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Numbers Going Up WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633486F3268B4A2A00C5584E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		633486F5268B4A2A00C5584E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633486FA268B4A2A00C5584E /* Numbers Going Up WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Numbers Going Up WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633486FF268B4A2A00C5584E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63348701268B4A2A00C5584E /* Numbers_Going_UpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers_Going_UpApp.swift; sourceTree = "<group>"; };
+		63348703268B4A2A00C5584E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		63348705268B4A2B00C5584E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63348708268B4A2B00C5584E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6334870A268B4A2B00C5584E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6334870F268B4A2B00C5584E /* Numbers Going UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Numbers Going UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63348713268B4A2B00C5584E /* Numbers_Going_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers_Going_UpTests.swift; sourceTree = "<group>"; };
+		63348715268B4A2B00C5584E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6334871A268B4A2B00C5584E /* Numbers Going UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Numbers Going UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6334871E268B4A2B00C5584E /* Numbers_Going_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers_Going_UpUITests.swift; sourceTree = "<group>"; };
+		63348720268B4A2B00C5584E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		633486F7268B4A2A00C5584E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6334870C268B4A2B00C5584E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63348717268B4A2B00C5584E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		633486E3268B4A2900C5584E = {
+			isa = PBXGroup;
+			children = (
+				633486F2268B4A2900C5584E /* Numbers Going Up WatchKit App */,
+				633486FE268B4A2A00C5584E /* Numbers Going Up WatchKit Extension */,
+				63348712268B4A2B00C5584E /* Numbers Going UpTests */,
+				6334871D268B4A2B00C5584E /* Numbers Going UpUITests */,
+				633486EB268B4A2900C5584E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		633486EB268B4A2900C5584E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				633486EA268B4A2900C5584E /* Numbers Going Up.app */,
+				633486EE268B4A2900C5584E /* Numbers Going Up WatchKit App.app */,
+				633486FA268B4A2A00C5584E /* Numbers Going Up WatchKit Extension.appex */,
+				6334870F268B4A2B00C5584E /* Numbers Going UpTests.xctest */,
+				6334871A268B4A2B00C5584E /* Numbers Going UpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		633486F2268B4A2900C5584E /* Numbers Going Up WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				633486F3268B4A2A00C5584E /* Assets.xcassets */,
+				633486F5268B4A2A00C5584E /* Info.plist */,
+			);
+			path = "Numbers Going Up WatchKit App";
+			sourceTree = "<group>";
+		};
+		633486FE268B4A2A00C5584E /* Numbers Going Up WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				633486FF268B4A2A00C5584E /* ContentView.swift */,
+				63348701268B4A2A00C5584E /* Numbers_Going_UpApp.swift */,
+				63348703268B4A2A00C5584E /* ComplicationController.swift */,
+				63348705268B4A2B00C5584E /* Assets.xcassets */,
+				6334870A268B4A2B00C5584E /* Info.plist */,
+				63348707268B4A2B00C5584E /* Preview Content */,
+			);
+			path = "Numbers Going Up WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		63348707268B4A2B00C5584E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				63348708268B4A2B00C5584E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63348712268B4A2B00C5584E /* Numbers Going UpTests */ = {
+			isa = PBXGroup;
+			children = (
+				63348713268B4A2B00C5584E /* Numbers_Going_UpTests.swift */,
+				63348715268B4A2B00C5584E /* Info.plist */,
+			);
+			path = "Numbers Going UpTests";
+			sourceTree = "<group>";
+		};
+		6334871D268B4A2B00C5584E /* Numbers Going UpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6334871E268B4A2B00C5584E /* Numbers_Going_UpUITests.swift */,
+				63348720268B4A2B00C5584E /* Info.plist */,
+			);
+			path = "Numbers Going UpUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		633486E9268B4A2900C5584E /* Numbers Going Up */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6334872B268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going Up" */;
+			buildPhases = (
+				633486E8268B4A2900C5584E /* Resources */,
+				6334872A268B4A2B00C5584E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633486F1268B4A2900C5584E /* PBXTargetDependency */,
+			);
+			name = "Numbers Going Up";
+			productName = "Numbers Going Up";
+			productReference = 633486EA268B4A2900C5584E /* Numbers Going Up.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		633486ED268B4A2900C5584E /* Numbers Going Up WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63348727268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going Up WatchKit App" */;
+			buildPhases = (
+				633486EC268B4A2900C5584E /* Resources */,
+				63348726268B4A2B00C5584E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633486FD268B4A2A00C5584E /* PBXTargetDependency */,
+			);
+			name = "Numbers Going Up WatchKit App";
+			productName = "Numbers Going Up WatchKit App";
+			productReference = 633486EE268B4A2900C5584E /* Numbers Going Up WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		633486F9268B4A2A00C5584E /* Numbers Going Up WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63348723268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going Up WatchKit Extension" */;
+			buildPhases = (
+				633486F6268B4A2A00C5584E /* Sources */,
+				633486F7268B4A2A00C5584E /* Frameworks */,
+				633486F8268B4A2A00C5584E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Numbers Going Up WatchKit Extension";
+			productName = "Numbers Going Up WatchKit Extension";
+			productReference = 633486FA268B4A2A00C5584E /* Numbers Going Up WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		6334870E268B4A2B00C5584E /* Numbers Going UpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6334872E268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going UpTests" */;
+			buildPhases = (
+				6334870B268B4A2B00C5584E /* Sources */,
+				6334870C268B4A2B00C5584E /* Frameworks */,
+				6334870D268B4A2B00C5584E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63348711268B4A2B00C5584E /* PBXTargetDependency */,
+			);
+			name = "Numbers Going UpTests";
+			productName = "Numbers Going UpTests";
+			productReference = 6334870F268B4A2B00C5584E /* Numbers Going UpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63348719268B4A2B00C5584E /* Numbers Going UpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63348731268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going UpUITests" */;
+			buildPhases = (
+				63348716268B4A2B00C5584E /* Sources */,
+				63348717268B4A2B00C5584E /* Frameworks */,
+				63348718268B4A2B00C5584E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6334871C268B4A2B00C5584E /* PBXTargetDependency */,
+			);
+			name = "Numbers Going UpUITests";
+			productName = "Numbers Going UpUITests";
+			productReference = 6334871A268B4A2B00C5584E /* Numbers Going UpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		633486E4268B4A2900C5584E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					633486E9268B4A2900C5584E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					633486ED268B4A2900C5584E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					633486F9268B4A2A00C5584E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6334870E268B4A2B00C5584E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 633486F9268B4A2A00C5584E;
+					};
+					63348719268B4A2B00C5584E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 633486ED268B4A2900C5584E;
+					};
+				};
+			};
+			buildConfigurationList = 633486E7268B4A2900C5584E /* Build configuration list for PBXProject "Numbers Going Up" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 633486E3268B4A2900C5584E;
+			productRefGroup = 633486EB268B4A2900C5584E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				633486E9268B4A2900C5584E /* Numbers Going Up */,
+				633486ED268B4A2900C5584E /* Numbers Going Up WatchKit App */,
+				633486F9268B4A2A00C5584E /* Numbers Going Up WatchKit Extension */,
+				6334870E268B4A2B00C5584E /* Numbers Going UpTests */,
+				63348719268B4A2B00C5584E /* Numbers Going UpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		633486E8268B4A2900C5584E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633486EC268B4A2900C5584E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633486F4268B4A2A00C5584E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633486F8268B4A2A00C5584E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63348709268B4A2B00C5584E /* Preview Assets.xcassets in Resources */,
+				63348706268B4A2B00C5584E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6334870D268B4A2B00C5584E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63348718268B4A2B00C5584E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		633486F6268B4A2A00C5584E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63348702268B4A2A00C5584E /* Numbers_Going_UpApp.swift in Sources */,
+				63348700268B4A2A00C5584E /* ContentView.swift in Sources */,
+				63348704268B4A2A00C5584E /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6334870B268B4A2B00C5584E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63348714268B4A2B00C5584E /* Numbers_Going_UpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63348716268B4A2B00C5584E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6334871F268B4A2B00C5584E /* Numbers_Going_UpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		633486F1268B4A2900C5584E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633486ED268B4A2900C5584E /* Numbers Going Up WatchKit App */;
+			targetProxy = 633486F0268B4A2900C5584E /* PBXContainerItemProxy */;
+		};
+		633486FD268B4A2A00C5584E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633486F9268B4A2A00C5584E /* Numbers Going Up WatchKit Extension */;
+			targetProxy = 633486FC268B4A2A00C5584E /* PBXContainerItemProxy */;
+		};
+		63348711268B4A2B00C5584E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633486F9268B4A2A00C5584E /* Numbers Going Up WatchKit Extension */;
+			targetProxy = 63348710268B4A2B00C5584E /* PBXContainerItemProxy */;
+		};
+		6334871C268B4A2B00C5584E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633486ED268B4A2900C5584E /* Numbers Going Up WatchKit App */;
+			targetProxy = 6334871B268B4A2B00C5584E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		63348721268B4A2B00C5584E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63348722268B4A2B00C5584E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63348724268B4A2B00C5584E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Numbers Going Up WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Numbers Going Up WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-Up.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		63348725268B4A2B00C5584E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Numbers Going Up WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Numbers Going Up WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-Up.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		63348728268B4A2B00C5584E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				IBSC_MODULE = Numbers_Going_Up_WatchKit_Extension;
+				INFOPLIST_FILE = "Numbers Going Up WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-Up.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		63348729268B4A2B00C5584E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				IBSC_MODULE = Numbers_Going_Up_WatchKit_Extension;
+				INFOPLIST_FILE = "Numbers Going Up WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-Up.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		6334872C268B4A2B00C5584E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6334872D268B4A2B00C5584E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6334872F268B4A2B00C5584E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				INFOPLIST_FILE = "Numbers Going UpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Numbers Going Up WatchKit Extension.appex/Numbers Going Up WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		63348730268B4A2B00C5584E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				INFOPLIST_FILE = "Numbers Going UpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Numbers Going Up WatchKit Extension.appex/Numbers Going Up WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		63348732268B4A2B00C5584E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				INFOPLIST_FILE = "Numbers Going UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Numbers Going Up WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		63348733268B4A2B00C5584E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZSVA6DVZHM;
+				INFOPLIST_FILE = "Numbers Going UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "davidbures.Numbers-Going-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Numbers Going Up WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		633486E7268B4A2900C5584E /* Build configuration list for PBXProject "Numbers Going Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63348721268B4A2B00C5584E /* Debug */,
+				63348722268B4A2B00C5584E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63348723268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going Up WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63348724268B4A2B00C5584E /* Debug */,
+				63348725268B4A2B00C5584E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63348727268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going Up WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63348728268B4A2B00C5584E /* Debug */,
+				63348729268B4A2B00C5584E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6334872B268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6334872C268B4A2B00C5584E /* Debug */,
+				6334872D268B4A2B00C5584E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6334872E268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going UpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6334872F268B4A2B00C5584E /* Debug */,
+				63348730268B4A2B00C5584E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63348731268B4A2B00C5584E /* Build configuration list for PBXNativeTarget "Numbers Going UpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63348732268B4A2B00C5584E /* Debug */,
+				63348733268B4A2B00C5584E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 633486E4268B4A2900C5584E /* Project object */;
+}
