@@ -17,6 +17,12 @@
 		63348709268B4A2B00C5584E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63348708268B4A2B00C5584E /* Preview Assets.xcassets */; };
 		63348714268B4A2B00C5584E /* Numbers_Going_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348713268B4A2B00C5584E /* Numbers_Going_UpTests.swift */; };
 		6334871F268B4A2B00C5584E /* Numbers_Going_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334871E268B4A2B00C5584E /* Numbers_Going_UpUITests.swift */; };
+		63348736268B4C7B00C5584E /* incrementNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348735268B4C7B00C5584E /* incrementNumber.swift */; };
+		63348739268B4FE500C5584E /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348738268B4FE500C5584E /* Score.swift */; };
+		6334873E268B536B00C5584E /* PowerupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334873D268B536B00C5584E /* PowerupListView.swift */; };
+		63348740268B537E00C5584E /* PowerupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334873F268B537E00C5584E /* PowerupItem.swift */; };
+		63348742268B53A200C5584E /* getRandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348741268B53A200C5584E /* getRandomNumber.swift */; };
+		636E42F0268BB004000EC538 /* Powerup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E42EF268BB004000EC538 /* Powerup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		6334871A268B4A2B00C5584E /* Numbers Going UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Numbers Going UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6334871E268B4A2B00C5584E /* Numbers_Going_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers_Going_UpUITests.swift; sourceTree = "<group>"; };
 		63348720268B4A2B00C5584E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63348735268B4C7B00C5584E /* incrementNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incrementNumber.swift; sourceTree = "<group>"; };
+		63348738268B4FE500C5584E /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		6334873D268B536B00C5584E /* PowerupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerupListView.swift; sourceTree = "<group>"; };
+		6334873F268B537E00C5584E /* PowerupItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerupItem.swift; sourceTree = "<group>"; };
+		63348741268B53A200C5584E /* getRandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getRandomNumber.swift; sourceTree = "<group>"; };
+		636E42EF268BB004000EC538 /* Powerup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Powerup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +167,9 @@
 		633486FE268B4A2A00C5584E /* Numbers Going Up WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				6334873A268B515E00C5584E /* Reusable Views */,
+				63348737268B4FDA00C5584E /* Classes */,
+				63348734268B4BF300C5584E /* Functions */,
 				633486FF268B4A2A00C5584E /* ContentView.swift */,
 				63348701268B4A2A00C5584E /* Numbers_Going_UpApp.swift */,
 				63348703268B4A2A00C5584E /* ComplicationController.swift */,
@@ -189,6 +204,33 @@
 				63348720268B4A2B00C5584E /* Info.plist */,
 			);
 			path = "Numbers Going UpUITests";
+			sourceTree = "<group>";
+		};
+		63348734268B4BF300C5584E /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				63348735268B4C7B00C5584E /* incrementNumber.swift */,
+				63348741268B53A200C5584E /* getRandomNumber.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		63348737268B4FDA00C5584E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				63348738268B4FE500C5584E /* Score.swift */,
+				636E42EF268BB004000EC538 /* Powerup.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6334873A268B515E00C5584E /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				6334873D268B536B00C5584E /* PowerupListView.swift */,
+				6334873F268B537E00C5584E /* PowerupItem.swift */,
+			);
+			path = "Reusable Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +421,13 @@
 			files = (
 				63348702268B4A2A00C5584E /* Numbers_Going_UpApp.swift in Sources */,
 				63348700268B4A2A00C5584E /* ContentView.swift in Sources */,
+				63348742268B53A200C5584E /* getRandomNumber.swift in Sources */,
+				63348736268B4C7B00C5584E /* incrementNumber.swift in Sources */,
+				63348740268B537E00C5584E /* PowerupItem.swift in Sources */,
 				63348704268B4A2A00C5584E /* ComplicationController.swift in Sources */,
+				636E42F0268BB004000EC538 /* Powerup.swift in Sources */,
+				63348739268B4FE500C5584E /* Score.swift in Sources */,
+				6334873E268B536B00C5584E /* PowerupListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

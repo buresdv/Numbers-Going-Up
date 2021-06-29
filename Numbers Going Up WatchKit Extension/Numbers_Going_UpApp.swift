@@ -8,11 +8,11 @@
 import SwiftUI
 
 @main
-struct Numbers_Going_UpApp: App {
+struct Numbers_Going_UpApp: App {    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView(currentScore: Score(), scoreMultiplier: ScoreMultiplier())
             }
         }
     }
