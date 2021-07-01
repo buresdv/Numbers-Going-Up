@@ -16,7 +16,7 @@ class Score: ObservableObject {
 class ScoreMultiplier: ObservableObject {
     // Define a global variable that sets a multiplier for score that gets added on click
     // Call scoreMultiplier.multiplierValue to access the value
-    @Published var multiplierValue: Int = 3
+    @Published var multiplierValue: Int = 11
 }
 
 class ButtonTappedAmount: ObservableObject {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 func chooseRightEffect(effectKey: String) -> Void {
     switch effectKey {

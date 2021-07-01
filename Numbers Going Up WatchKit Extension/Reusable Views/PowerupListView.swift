@@ -16,17 +16,13 @@ let allPowerUps = [
 ]
 
 struct PowerupListView: View {
+    @Binding var isShowingSheet: Bool
+    @Binding var currentScore: Int
     var body: some View {
         List {
             ForEach(allPowerUps) { powerUp in
-                PowerupItem(powerUp: powerUp)
+                PowerupItem(isShowingSheet: $isShowingSheet, currentScore: $currentScore, powerUp: powerUp)
             }
         }
-    }
-}
-
-struct PowerupListView_Previews: PreviewProvider {
-    static var previews: some View {
-        PowerupListView()
     }
 }

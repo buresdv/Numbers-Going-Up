@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Numbers Going Up
+
+  Created by David Bureš on 01.07.2021.
+  
+*/
+
+"go-up-button" = "Go Up!";
+"powerup-button" = "Power-Ups";

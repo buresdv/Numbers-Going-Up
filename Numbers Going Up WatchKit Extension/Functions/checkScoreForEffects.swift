@@ -9,7 +9,7 @@ import Foundation
 import WatchKit
 
 func checkScoreForEffects (currentScore: Int) -> Void {
-    if currentScore % 50 == 0 {
-        playSound(soundToPlay: .start) // Play this sound every 50 taps
+    if currentScore % 20 == 0 {
+        playSound(soundToPlay: .start) // Play this sound every 20 taps
     }
 }
