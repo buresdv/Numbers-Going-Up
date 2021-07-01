@@ -16,13 +16,16 @@ struct PowerupItem: View {
             VStack(alignment: .leading) {
                 Text(powerUp.name)
                     .font(.headline)
+                Text("-\(String(powerUp.cost))")
+                    .font(.footnote)
                 Text(powerUp.description)
                     .font(.subheadline)
             }
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
         .onTapGesture {
             // Define what happens on tap of a powerup
-            print("Tapped")
+            chooseRightEffect(effectKey: powerUp.effect) // Calls applyEffect
+            playSound(soundToPlay: .success)
         }
     }
 }

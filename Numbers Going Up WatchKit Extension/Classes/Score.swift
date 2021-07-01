@@ -18,3 +18,10 @@ class ScoreMultiplier: ObservableObject {
     // Call scoreMultiplier.multiplierValue to access the value
     @Published var multiplierValue: Int = 3
 }
+
+class ButtonTappedAmount: ObservableObject {
+    // Define a global variable that stores how many times the Go Up! Button has been clicked
+    // Used for playing sounds
+    // Call buttonTappedAmount.tappedAmount to access the value
+    @Published var tappedAmount: Int = 0
+}

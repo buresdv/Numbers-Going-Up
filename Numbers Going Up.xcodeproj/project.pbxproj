@@ -17,12 +17,15 @@
 		63348709268B4A2B00C5584E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63348708268B4A2B00C5584E /* Preview Assets.xcassets */; };
 		63348714268B4A2B00C5584E /* Numbers_Going_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348713268B4A2B00C5584E /* Numbers_Going_UpTests.swift */; };
 		6334871F268B4A2B00C5584E /* Numbers_Going_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334871E268B4A2B00C5584E /* Numbers_Going_UpUITests.swift */; };
-		63348736268B4C7B00C5584E /* incrementNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348735268B4C7B00C5584E /* incrementNumber.swift */; };
 		63348739268B4FE500C5584E /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348738268B4FE500C5584E /* Score.swift */; };
 		6334873E268B536B00C5584E /* PowerupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334873D268B536B00C5584E /* PowerupListView.swift */; };
 		63348740268B537E00C5584E /* PowerupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334873F268B537E00C5584E /* PowerupItem.swift */; };
 		63348742268B53A200C5584E /* getRandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63348741268B53A200C5584E /* getRandomNumber.swift */; };
 		636E42F0268BB004000EC538 /* Powerup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E42EF268BB004000EC538 /* Powerup.swift */; };
+		636E42F2268BC902000EC538 /* updateScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E42F1268BC902000EC538 /* updateScore.swift */; };
+		636E42F4268CA35F000EC538 /* checkScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E42F3268CA35F000EC538 /* checkScore.swift */; };
+		636E42F8268DE3D7000EC538 /* applyEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E42F7268DE3D7000EC538 /* applyEffect.swift */; };
+		636E42FA268DEC74000EC538 /* playSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636E42F9268DEC74000EC538 /* playSound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,12 +102,15 @@
 		6334871A268B4A2B00C5584E /* Numbers Going UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Numbers Going UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6334871E268B4A2B00C5584E /* Numbers_Going_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers_Going_UpUITests.swift; sourceTree = "<group>"; };
 		63348720268B4A2B00C5584E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63348735268B4C7B00C5584E /* incrementNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incrementNumber.swift; sourceTree = "<group>"; };
 		63348738268B4FE500C5584E /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		6334873D268B536B00C5584E /* PowerupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerupListView.swift; sourceTree = "<group>"; };
 		6334873F268B537E00C5584E /* PowerupItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerupItem.swift; sourceTree = "<group>"; };
 		63348741268B53A200C5584E /* getRandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getRandomNumber.swift; sourceTree = "<group>"; };
 		636E42EF268BB004000EC538 /* Powerup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Powerup.swift; sourceTree = "<group>"; };
+		636E42F1268BC902000EC538 /* updateScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateScore.swift; sourceTree = "<group>"; };
+		636E42F3268CA35F000EC538 /* checkScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkScore.swift; sourceTree = "<group>"; };
+		636E42F7268DE3D7000EC538 /* applyEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = applyEffect.swift; sourceTree = "<group>"; };
+		636E42F9268DEC74000EC538 /* playSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playSound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,8 +215,10 @@
 		63348734268B4BF300C5584E /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				63348735268B4C7B00C5584E /* incrementNumber.swift */,
-				63348741268B53A200C5584E /* getRandomNumber.swift */,
+				636E42FC268DEC85000EC538 /* Helper Functions */,
+				636E42F1268BC902000EC538 /* updateScore.swift */,
+				636E42F3268CA35F000EC538 /* checkScore.swift */,
+				636E42F7268DE3D7000EC538 /* applyEffect.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -231,6 +239,15 @@
 				6334873F268B537E00C5584E /* PowerupItem.swift */,
 			);
 			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		636E42FC268DEC85000EC538 /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				636E42F9268DEC74000EC538 /* playSound.swift */,
+				63348741268B53A200C5584E /* getRandomNumber.swift */,
+			);
+			path = "Helper Functions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,10 +436,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636E42F2268BC902000EC538 /* updateScore.swift in Sources */,
+				636E42FA268DEC74000EC538 /* playSound.swift in Sources */,
 				63348702268B4A2A00C5584E /* Numbers_Going_UpApp.swift in Sources */,
 				63348700268B4A2A00C5584E /* ContentView.swift in Sources */,
+				636E42F4268CA35F000EC538 /* checkScore.swift in Sources */,
+				636E42F8268DE3D7000EC538 /* applyEffect.swift in Sources */,
 				63348742268B53A200C5584E /* getRandomNumber.swift in Sources */,
-				63348736268B4C7B00C5584E /* incrementNumber.swift in Sources */,
 				63348740268B537E00C5584E /* PowerupItem.swift in Sources */,
 				63348704268B4A2A00C5584E /* ComplicationController.swift in Sources */,
 				636E42F0268BB004000EC538 /* Powerup.swift in Sources */,

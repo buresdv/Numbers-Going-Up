@@ -12,7 +12,7 @@ struct Numbers_Going_UpApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView(currentScore: Score(), scoreMultiplier: ScoreMultiplier())
+                ContentView(currentScore: Score(), scoreMultiplier: ScoreMultiplier(), buttonTappedAmount: ButtonTappedAmount())
             }
         }
     }
