@@ -35,7 +35,29 @@ struct PowerupItem: View {
                 isShowingSheet = false
                 
                 // Define what happens on tap of a powerup
-                chooseRightEffect(effectKey: powerUp.effect) // Calls applyEffect
+                switch powerUp.effect {
+                case "halfToDouble":
+                    print("Half to Double selected")
+                    
+                case "multiplier":
+                    print("Multiplier selected")
+                    
+                case "doubleOrNothing":
+                    // 50/50 change to get double or lose everything
+                    if getRandomNumber(from: 1, to: 2) == 1 {
+                        print("Got double")
+                        currentScore = currentScore + currentScore + powerUp.cost // powerUp.cost
+                        print("New score: \(currentScore)")
+                    } else {
+                        currentScore = currentScore - currentScore + powerUp.cost
+                        print("Lost everything")
+                    }
+                    
+                default:
+                    print("Nothing selected")
+                }
+                
+                
                 playSound(soundToPlay: .success)
                 
                 currentScore = currentScore - powerUp.cost // Take away the number of points the powerup costed
