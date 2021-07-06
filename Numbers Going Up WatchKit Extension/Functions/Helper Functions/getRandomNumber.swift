@@ -7,6 +7,6 @@
 
 import Foundation
 
-func getRandomNumber(from: Int64, to: Int64) -> Int64 {
-    return Int64.random(in: from...to)
+func getRandomNumber(from: Int, to: Int) -> Int {
+    return Int.random(in: from...to)
 }

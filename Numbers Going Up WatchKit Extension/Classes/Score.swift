@@ -16,6 +16,7 @@ class Score: ObservableObject {
 class ScoreMultiplier: ObservableObject {
     // Define a global variable that sets a multiplier for score that gets added on click
     // Call scoreMultiplier.multiplierValue to access the value
+    #warning("TODO: Tohle nastavit na 1 než to publikuju")
     @Published var multiplierValue: Int = 11
 }
 
