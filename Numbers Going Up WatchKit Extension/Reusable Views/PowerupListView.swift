@@ -25,6 +25,11 @@ struct PowerupListView: View {
             ForEach(allPowerUps) { powerUp in
                 PowerupItem(isShowingSheet: $isShowingSheet, currentScore: $currentScore, scoreMultiplier: $scoreMultiplier, powerUp: powerUp)
             }
+            #warning("TODO: Tenhle text dát doprostřed")
+            #warning("TODO: A tohle taky zatím nic nedělá")
+            Text("Try taking a screenshot :)")
+                .foregroundColor(.accentColor)
+                .listRowBackground(Color.black)
         }
     }
 }

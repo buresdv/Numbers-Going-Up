@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State private var isShowingSheet = false
     @State var scrollAmount = 0.0
+    @State var isShowingTimer = false
+    
+    @State private var timerTimeRemaining = 5
     
     @ObservedObject var currentScore: Score
     @ObservedObject var scoreMultiplier: ScoreMultiplier
@@ -25,32 +28,47 @@ struct ContentView: View {
                     .focusable(true)
                     .digitalCrownRotation($scrollAmount, from: 0, through: Double(currentScore.score * 3), by: Double(buttonTappedAmount.tappedAmount), sensitivity: .medium, isContinuous: false, isHapticFeedbackEnabled: true)*/
                 
-                Text("\(scoreMultiplier.multiplierValue) per tap")
-                    .foregroundColor(.accentColor)
-                Button(action: {
-                    currentScore.score += 1 * scoreMultiplier.multiplierValue // Increase score
-                    buttonTappedAmount.tappedAmount += 1 // Increase the tapped amount for the purpose of playing effects
+                VStack { // Points per tap and scroll countdown text
+                    Text("\(scoreMultiplier.multiplierValue) per tap")
+                        .foregroundColor(.accentColor)
                     
-                    checkScoreForEffects(currentScore: buttonTappedAmount.tappedAmount) // check if the current number of taps is supposed to play any effects
-                    print(String(currentScore.score, radix: 16))
-                }, label: {
-                    Text(LocalizedStringKey("go-up-button"))
-                })
+                    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect() // Definovat zobrazení zbývajícího času
+                    Text("\(timerTimeRemaining)")
+                        .foregroundColor(Color.yellow)
+                        .onReceive(timer) { time in
+                            // Start counting down from 5
+                            if self.timerTimeRemaining > 0 {
+                                self.timerTimeRemaining -= 1
+                            }
+                            // When the timer reaches 0, reset it back to 5 for the next activation of Magic Scroll
+                            if self.timerTimeRemaining == 0 {
+                                self.timerTimeRemaining = 5
+                            }
+                        }
+                }
                 
-                Spacer()
-                
-                Button(action: {
-                    self.isShowingSheet = true
-                }, label: {
-                    Text(LocalizedStringKey("powerup-button"))
-                })
-                .sheet(isPresented: $isShowingSheet, content: {
-                    #warning("TODO: Tenhle sheet by měl zmizet když kliknou na powerup v powerupListView")
+                VStack { // Button stack
+                    Button(action: {
+                        currentScore.score += 1 * scoreMultiplier.multiplierValue // Increase score
+                        buttonTappedAmount.tappedAmount += 1 // Increase the tapped amount for the purpose of playing effects
+                        
+                        checkScoreForEffects(currentScore: buttonTappedAmount.tappedAmount) // check if the current number of taps is supposed to play any effects
+                        print(String(currentScore.score, radix: 16))
+                    }, label: {
+                        Text(LocalizedStringKey("go-up-button"))
+                    })
                     
-                    // Send isShowingSheet in order for the sheet to go down when a powerup is bought
-                    // Send currentScore in order to let the powerups know how many points the player has to see if they can buy a powerup
-                    PowerupListView(isShowingSheet: $isShowingSheet, currentScore: $currentScore.score, scoreMultiplier: $scoreMultiplier.multiplierValue)
-                })
+                    Button(action: {
+                        self.isShowingSheet = true
+                    }, label: {
+                        Text(LocalizedStringKey("powerup-button"))
+                    })
+                    .sheet(isPresented: $isShowingSheet, content: {
+                        // Send isShowingSheet in order for the sheet to go down when a powerup is bought
+                        // Send currentScore in order to let the powerups know how many points the player has to see if they can buy a powerup
+                        PowerupListView(isShowingSheet: $isShowingSheet, currentScore: $currentScore.score, scoreMultiplier: $scoreMultiplier.multiplierValue)
+                    })
+                }
             }
             VStack {
                 #warning("TODO: Zprovoznit. Když to tu je, celý view zmizí nad horní část viewportu")
