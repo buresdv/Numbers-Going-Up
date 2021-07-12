@@ -13,6 +13,8 @@ struct PowerupItem: View {
     @Binding var currentScore: Int
     @Binding var scoreMultiplier: Int
     
+    @Binding var isCountdownRunning: Bool
+    
     var powerUp: PowerUp
     
     var body: some View {
@@ -46,6 +48,11 @@ struct PowerupItem: View {
                     
                 case "multiplier":
                     scoreMultiplier = scoreMultiplier + 1
+                    
+                case "magicScroll":
+                    print("isCountdownRunning was \(isCountdownRunning)")
+                    isCountdownRunning = true
+                    print("Modified isCountdownRunning to \(isCountdownRunning)")
                     
                 case "doubleOrNothing":
                     // 50/50 change to get double or lose everything

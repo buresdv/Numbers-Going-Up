@@ -19,11 +19,12 @@ struct PowerupListView: View {
     @Binding var isShowingSheet: Bool
     @Binding var currentScore: Int
     @Binding var scoreMultiplier: Int
+    @Binding var isCountdownRunning: Bool
     
     var body: some View {
         List {
             ForEach(allPowerUps) { powerUp in
-                PowerupItem(isShowingSheet: $isShowingSheet, currentScore: $currentScore, scoreMultiplier: $scoreMultiplier, powerUp: powerUp)
+                PowerupItem(isShowingSheet: $isShowingSheet, currentScore: $currentScore, scoreMultiplier: $scoreMultiplier, isCountdownRunning: $isCountdownRunning, powerUp: powerUp)
             }
             #warning("TODO: Tenhle text dát doprostřed")
             #warning("TODO: A tohle taky zatím nic nedělá")
