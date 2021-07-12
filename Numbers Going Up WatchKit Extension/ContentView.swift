@@ -12,7 +12,6 @@ struct ContentView: View {
     @State var scrollAmount = 0.0
     @State var isShowingTimer = false
     
-    @State private var timerTimeRemaining = 5
     
     @ObservedObject var currentScore: Score
     @ObservedObject var scoreMultiplier: ScoreMultiplier
@@ -24,27 +23,13 @@ struct ContentView: View {
                 Text("\(currentScore.score)")
                     .font(.title)
                 
-                /*Text("SA: \(Int(scrollAmount))")
-                    .focusable(true)
-                    .digitalCrownRotation($scrollAmount, from: 0, through: Double(currentScore.score * 3), by: Double(buttonTappedAmount.tappedAmount), sensitivity: .medium, isContinuous: false, isHapticFeedbackEnabled: true)*/
-                
                 VStack { // Points per tap and scroll countdown text
                     Text("\(scoreMultiplier.multiplierValue) per tap")
                         .foregroundColor(.accentColor)
                     
-                    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect() // Definovat zobrazení zbývajícího času
-                    Text("\(timerTimeRemaining)")
-                        .foregroundColor(Color.yellow)
-                        .onReceive(timer) { time in
-                            // Start counting down from 5
-                            if self.timerTimeRemaining > 0 {
-                                self.timerTimeRemaining -= 1
-                            }
-                            // When the timer reaches 0, reset it back to 5 for the next activation of Magic Scroll
-                            if self.timerTimeRemaining == 0 {
-                                self.timerTimeRemaining = 5
-                            }
-                        }
+                    Text("SA: \(Int(scrollAmount))")
+                        .focusable(true)
+                        .digitalCrownRotation($scrollAmount, from: 0, through: Double(currentScore.score * 3), by: Double(buttonTappedAmount.tappedAmount), sensitivity: .medium, isContinuous: false, isHapticFeedbackEnabled: true)
                 }
                 
                 VStack { // Button stack

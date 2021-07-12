@@ -47,6 +47,9 @@ struct PowerupItem: View {
                 case "multiplier":
                     scoreMultiplier = scoreMultiplier + 1
                     
+                case "magicScroll":
+                    print("Magic Scroll")
+                    
                 case "doubleOrNothing":
                     // 50/50 change to get double or lose everything
                     if getRandomNumber(from: 1, to: 2) == 1 {
